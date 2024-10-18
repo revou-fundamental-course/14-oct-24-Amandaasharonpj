@@ -1,1 +1,1 @@
-//ini java script
+//ini java script pakai prompt

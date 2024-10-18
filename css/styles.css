@@ -1,1 +1,179 @@
 /*ini css*/
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background: #240401; 
+}
+::-webkit-scrollbar-thumb {
+    background: #68160d; 
+    border-radius: 20px; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #68160d94;
+}
+
+body{
+    background-color: #f5f2f0;
+    color: #2e2626;
+    font-family: "Lbre Baskerville", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.logo-icon {
+    height: 50px;
+    width: 50px;
+    background-image: url(../asset/logo-icon.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+nav {
+    display: flex;
+}
+nav>a {
+    border: 1px solid;
+    border-radius: 30px;
+    border-color: #2e2626 ;
+    background-color: #68160d;
+    margin-right: 10px;
+    padding: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    text-decoration: none;
+    color: #f5f2f0;
+    font-weight: 400;
+    font-size: smaller;
+}
+
+.home-header{
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-left: 10px;
+    background-color: #f5f2f0;
+    width: 415px;
+    height: fit-content;
+    display: inline-block;
+    border-radius: 2px;
+}
+.nama {
+    font-family: "Parisienne", cursive;
+    font-weight: 700;
+    font-style: normal;
+    color: #68160d;
+}
+.hi-home {
+    margin: 0;
+}
+.welcome-home {
+    margin: 0;
+}
+
+.profile-quotes {
+    font-family: monospace; 
+    color: #68160d;
+    font-weight: 700;
+    font-size: larger;
+    margin: 0;
+    border-right: 2px solid #2e2626; 
+    white-space: nowrap; 
+    overflow: hidden;
+    display: inline-block; 
+    animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+    background-color: #f5f2f0;
+    font-style: italic;
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; } 
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #68160d; }
+}
+
+#section-home {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../asset/painting-profile.jpg);
+}
+.profile-article {
+    height: 500px;
+}
+
+.about-exhibition{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.about-profile{
+    font-size: 80px;
+    font-weight: 90;
+    padding-left: 100px;
+    font-style: normal;
+    margin: 0;
+}
+.flex-profile1{
+    display: flex;
+}
+.our-profile{
+    margin: 0;
+    padding-left: 100px;
+    font-weight: 2;
+    font-style: italic;
+    font-size: 60px;
+    margin-top: -30px;
+}
+.painting-profile{
+    margin: 0;
+    padding-left: 10px;
+    margin-top: -15px;
+    width: 115px;
+    height: 50px;
+    object-fit: cover;
+    object-position: 75% 25%;
+}
+.our-profile2{
+    margin: 0;
+    padding-left: 150px;
+    font-weight: 2;
+    font-style: italic;
+    font-size: 60px;
+    margin-top: -15px;
+}
+.aboutus-profile{
+    max-width: 500px;
+    margin-top: 35px;
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 100px;
+    padding-left: 10px;
+    padding-right: 100px;
+    border-left: solid 0.5px #2e2626;
+    
+
+}
+
+
+.message-container{
+    display: flex;
+}
+footer>div {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-weight: bold;
+}
