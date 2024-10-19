@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     
+
     <title>Amd Art Gallery</title>
 </head>
 <body>
@@ -131,15 +132,51 @@
 
         <!----section message-us-->
         <section  id="section-message-us">
-            <header>
-                <h1>Whisper to Us</h1>
-                <p>Have a thought to share or a question that lingers like a brushstroke? Reach out, and let your words paint a connection. Whether you're inspired by the art or curious about the details, we’re here to listen. Send us your message, and together, we’ll create something beautiful.</p>
-            </header>
-            <div class="message-container"> 
-                <form action=""></form>
-                <div></div>
+            <div class="left-message">
+                <header class="header-message">
+                    <div class="div-header-message">
+                        <div>
+                            <h1>Whisper</h1>
+                            <h3>to</h3>
+                            <h2>Us</h2>
+                        </div>
+                        <p>Have a thought to share or a question that lingers like a brushstroke? Reach out, and let your words paint a connection. Whether you're inspired by the art or curious about the details, we’re here to listen. Send us your message, and together, we’ll create something beautiful.</p>
+                    </div>
+                </header>
+                <div class="message-container"> 
+                    <form action="" id="message-form">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required><br>
+
+                        <label for="birthdate">Place of Birth (Date):</label>
+                        <input type="date" id="birthdate" name="birthdate" required><br>
+
+                        <label>Gender:</label>
+                        <input type="radio" id="male" name="gender" value="Male" required>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="Female" required>
+                        <label for="female">Female</label><br>
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea><br>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                    <div>
+                        <div class="right-message">
+                            <h2>Your Details</h2>
+                            <p><strong>Name:</strong> <span id="displayName"></span></p>
+                            <p><strong>Place of Birth (Date):</strong> <span id="displayBirthdate"></span></p>
+                            <p><strong>Gender:</strong> <span id="displayGender"></span></p>
+                            <p><strong>Message:</strong> <span id="displayMessage"></span></p>
+                            <p><strong>Current Time:</strong> <span id="currentTime"></span></p>
+                        </div>
+                    </div>
+                </div>
             </div>
+            
         </section>
+        <script src="js/script.js"></script>
 
     </main> <!------konten-->
 
