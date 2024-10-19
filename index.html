@@ -22,8 +22,8 @@
         </div> <!----logo-->
         <nav> <!----nav bar : yang dipakai ancor karena lebih art semantic -->
             <a href="#section-home">Home</a>
-            <a href="#section-profile">Our Profile</a>
-            <a href="#section-portfolio">Portfolio</a>
+            <a href="#section-profile">About</a>
+            <a href="#section-collections">Collections</a>
             <a href="#section-message-us">Message Us</a>
         </nav> 
     </header> 
@@ -33,41 +33,55 @@
     <main>
         <!----section home-->
         <section id="section-home">
-            <header class="home-header">
-                <h1 class="hi-home">Hi <span class="nama">User</span> ,</h1>
-                <h2 class="welcome-home">Welcome to my Art Gallery</h2>
-                <p class="profile-quotes"> Art is to console those who are broken by life </p>
-            </header>
-
             <article>
-                
                 <!-----photo banner -->
                 <div class="photo-banner"></div>
-
             </article>
-            <article>
-                <div class="profile-article"></div>
+            <article class="text-home">
+                <h3 class="welcome-home"> Welcome User, </h3>
+                <h1 class="name-home"> Realitates Aetheriae </h1>
+                <p class="quotes-home"> Art is to console those who are broken by life </p>
             </article>
+            
+            
         </section> 
 
         <hr>
 
+
         <!----section profile-->
         <section  id="section-profile">
             <div class="about-exhibition">
-                <header>
+                <header class="exhi-profile">
                     <h1 class="about-profile">About</h1>
                     <div class="flex-profile1">
                         <h3 class="our-profile">exhi</h3>
                         <img class="painting-profile" src="asset/exhibiton-about.jpg" alt="">
                     </div>
                     <h3 class="our-profile2">-bition</h3>
+                    
+                    <p class="aboutus-profile">
+                        Step into a world where imagination meets artistry. Our gallery showcases a vibrant collection of works that push the boundaries of creativity. Each piece invites you to explore unique perspectives, emotions, and stories—capturing the essence of beauty in the unexpected.
+                    </p>
                 </header>
-                <p class="aboutus-profile">
-                    Step into a world where imagination meets artistry. Our gallery showcases a vibrant collection of works that push the boundaries of creativity. Each piece invites you to explore unique perspectives, emotions, and stories—capturing the essence of beauty in the unexpected.
-                </p>
+                <img class="place-profile" src="asset/place-profile.jpg" alt="">
             </div>
-        
+            
+            <div class="visi-misi-profile">
+                <div class="visi-profile">
+                    <h1 class="visi">Visio</h1>
+                    <p class="isi-visi"> To unveil the unseen, where art transcends reality and the ethereal becomes tangible. </p>
+                </div>
+                <div class="misi-profile">
+                    <h1 class="misi">Missio</h1>
+                    <ul class="isi-misi">
+                        <li>To inspire through works that capture fleeting moments of surreal beauty.</li>
+                        <li>To create a space where imagination and emotion flow freely.</li>
+                        <li>To connect viewers with the intangible through the language of art.</li>
+                    </ul>
+                   
+                </div>
+            </div>
             <article class="profile-article">
                 
             </article>
@@ -75,14 +89,42 @@
 
         <hr>
 
-        <!----section portfolio-->
-        <section  id="section-portfolio">
+        <!----section Collection-->
+        <section  id="section-collections">
             <header>
-                <h1>Portfolio</h1>
-            </header>
-            <article>
-                <div class="profile-article"></div>
-            </article>
+                <h1 class="month">October</h1>
+                <h1 class="collection">Collections</h1>
+                <h3 class="title-october">A Journey Through Changing Hues</h3>
+                <p class="october-collection">
+                    This month’s exhibition, October Collection, captures the essence of transformation. As the seasons shift, so do the colors, emotions, and textures of the artwork on display. Each piece in this collection reflects the beauty of change—whether through vibrant autumnal tones, abstract interpretations of nature’s cycles, or thought-provoking sculptures that evoke the fleeting nature of time.
+                </p>
+            </header >
+            <div class="painting-structure">
+                <div class="painting-1">
+                    <img src="asset/1-collection.png" class="img-painting-1" alt="">
+                    <h3>Eclipsed by Grace</h3>
+                    <p>Divine solace in despair and hope.</p>
+                </div>
+                <div>
+                    <div class="painting-2">
+                        <h3>Coronation of Napoleon</h3>
+                        <p>The opulence, regality, and political power in the era</p>
+                        <img src="asset/2-collection.png" class="img-painting-2" alt="">
+                    </div>
+                    <div class="painting-3">
+                        <img src="asset/3-collection.png" class="img-painting-3" alt="">
+                        <h3>Primavera : The Spring</h3>
+                        <p>The arrival of the season of growth</p>
+                    </div>
+                </div>
+                <div class="painting-4">
+                    <h3>Portrait of a Young Man</h3>
+                    <p>Ideals of beauty and refinement</p>
+                    <img src="asset/4-collection.png" class="img-painting-4" alt="">
+                </div>
+            </div>
+            
+        
         </section>
 
         <hr>
@@ -90,7 +132,8 @@
         <!----section message-us-->
         <section  id="section-message-us">
             <header>
-                <h1>Massage Us</h1>
+                <h1>Whisper to Us</h1>
+                <p>Have a thought to share or a question that lingers like a brushstroke? Reach out, and let your words paint a connection. Whether you're inspired by the art or curious about the details, we’re here to listen. Send us your message, and together, we’ll create something beautiful.</p>
             </header>
             <div class="message-container"> 
                 <form action=""></form>

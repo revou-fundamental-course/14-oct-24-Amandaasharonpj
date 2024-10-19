@@ -58,66 +58,61 @@ nav>a {
     font-size: smaller;
 }
 
-.home-header{
-    margin-left: 10px;
-    margin-top: 10px;
-    padding-left: 10px;
-    background-color: #f5f2f0;
-    width: 415px;
-    height: fit-content;
-    display: inline-block;
-    border-radius: 2px;
-}
-.nama {
-    font-family: "Parisienne", cursive;
-    font-weight: 700;
-    font-style: normal;
-    color: #68160d;
-}
-.hi-home {
-    margin: 0;
-}
-.welcome-home {
-    margin: 0;
-}
 
-.profile-quotes {
+#section-home {
+    height: 700px;
+    background-size: cover;
+    background-position: 80% 20%;
+    background-image: url(../asset/painting-home.jpg);
+}
+.text-home {
+    padding-top: 300px;
+}
+.name-home {
+    color: #f5f2f0;
+    font-weight: 300;
+    text-align: center;
+    font-size: 150px;
+    font-style: italic;
+    margin:0;
+    margin-top:-20px;
+}
+.quotes-home {
     font-family: monospace; 
-    color: #68160d;
-    font-weight: 700;
+    color: #f5f2f0;
+    font-weight: 500;
     font-size: larger;
     margin: 0;
+    margin-left: 650px;
+    margin-top: -20px;
     border-right: 2px solid #2e2626; 
     white-space: nowrap; 
     overflow: hidden;
-    display: inline-block; 
+    text-align: center;
     animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
-    background-color: #f5f2f0;
     font-style: italic;
 }
 @keyframes typing {
-    from { width: 0; }
-    to { width: 100%; } 
+    from { width: 0px; }
+    to { width: 800px; } 
 }
 @keyframes blink-caret {
     from, to { border-color: transparent; }
-    50% { border-color: #68160d; }
+    50% { border-color: #f5f2f0; }
+}
+.welcome-home {
+    color: #f5f2f0;
+    font-weight: 90;
+    margin-left: 250px;
+    font-size: 30px;
+    margin-bottom: 0;
 }
 
-#section-home {
-    height: 500px;
-    background-size: cover;
-    background-position: center;
-    background-image: url(../asset/painting-profile.jpg);
-}
-.profile-article {
-    height: 500px;
-}
 
+/*ABOUT*/
 .about-exhibition{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 .about-profile{
     font-size: 80px;
@@ -128,6 +123,19 @@ nav>a {
 }
 .flex-profile1{
     display: flex;
+}
+.exhi-profile{
+    flex: 1;
+}
+.place-profile{
+    flex: 3;
+    height: 550px;
+    margin-top: 10px;
+    margin-left: -40px;
+    margin-right: 100px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    
 }
 .our-profile{
     margin: 0;
@@ -156,15 +164,143 @@ nav>a {
 }
 .aboutus-profile{
     max-width: 500px;
-    margin-top: 35px;
-    font-size: 20px;
+    margin-top: 165px;
+    font-size: 16px;
     text-align: justify;
     margin-left: 100px;
-    padding-left: 10px;
-    padding-right: 100px;
-    border-left: solid 0.5px #2e2626;
-    
+    margin-right: 100px;
+    border-top: #2e2626 solid 1px;
+    padding-top: 10px;
+}
+.visi-misi-profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-top: -10px;
+    margin-right: 150px;
+}
+.visi-profile{
+    margin-right: 50px;
+    font-style: italic;
+}
+.misi-profile{
+    font-style: italic;
+}
+.isi-misi{
+    margin-top: -15px;
+    width: 400px;
+    margin-left: -20px;
+    font-style: normal;
+}
+.isi-visi{
+    margin-top: -15px;
+    width: 350px;
+    font-style: normal;
+}
 
+/*Collections*/
+#section-collections{
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+}
+.month {
+    font-size: 50px;
+    margin: 0;
+    margin-left: 150px;
+    font-weight: 100;
+    font-style: oblique;
+    margin-top: 60px;
+}
+.collection {
+    font-size: 80px;
+    margin: 0;
+    margin-left: 100px;
+    margin-top: -20px;
+    font-weight: 700;
+}
+.painting-structure{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-top: 80px;
+    margin-left: 100px;
+    margin-right: 100px;
+  
+}
+
+.painting-1{
+    width: 280px;
+    margin-top: 150px;
+}
+.painting-1 p{
+    margin: 0;
+}
+.painting-1 h3{
+    margin: 0;
+    font-weight: 600;
+}
+.painting-1 img {
+    height: 300px;
+    margin: 0;
+}
+
+.painting-2{
+    width: 380px;
+}
+.painting-2 img {
+    width: 350px;
+    margin: 0;
+}
+.painting-2 h3{
+    margin: 0;
+    font-weight: 600;
+}
+.painting-2 p{
+    margin: 0;
+}
+
+.painting-3{
+    width: 380px;
+}
+.painting-3 img {
+    width: 350px;
+    margin: 0;
+}
+.painting-3 h3{
+    margin: 0;
+    font-weight: 600;
+}
+.painting-3 p{
+    margin: 0;
+}
+
+.painting-4{
+    width: 280px;
+    margin-top: 200px;
+}
+.painting-4 img {
+    height: 300px;
+    margin: 0;
+}
+.painting-4 h3{
+    margin: 0;
+    font-weight: 600;
+}
+.painting-4 p{
+    margin: 0;
+}
+
+.title-october{
+    margin-top: 350px;
+    margin-bottom: 5px;
+    margin-left: 100px;
+}
+.october-collection {
+    margin: 0;
+    margin-left: 100px;
+    width: 370px;
+    text-align: justify;
 }
 
 
