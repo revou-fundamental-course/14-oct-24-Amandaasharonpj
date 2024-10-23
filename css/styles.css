@@ -42,6 +42,7 @@ body{
 }
 nav {
     display: flex;
+    flex-wrap: wrap;
 }
 nav>a {
     border: 1px solid;
@@ -409,4 +410,92 @@ footer>div {
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
     font-weight: bold;
+}
+
+
+/* Responsive Design with Media Queries */
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav > a {
+        margin-bottom: 2px;
+        padding: 5px 20px;
+        font-size: larger;
+    }
+
+    /* Home section: Adjust text and banner placement */
+    .text-home {
+        padding-top: 150px;
+        text-align: center;
+    }
+    .name-home {
+        font-size: 80px;
+    }
+    .quotes-home {
+        margin-left: 0;
+        font-size: medium;
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Profile Section */
+    .about-exhibition {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .about-profile {
+        font-size: 50px;
+        text-align: center;
+    }
+    .aboutus-profile {
+        margin: 20px;
+        font-size: 14px;
+    }
+    .visi-misi-profile {
+        flex-direction: column;
+        margin-right: 0;
+        margin-left: 10px;
+    }
+    .isi-visi, .isi-misi {
+        width: auto;
+    }
+
+    /* Collections Section */
+    #section-collections {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .painting-structure {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .painting-1, .painting-2, .painting-3, .painting-4 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .painting-1 img, .painting-2 img, .painting-3 img, .painting-4 img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Message Us Section */
+    #section-message-us {
+        padding-top: 2000px;
+    }
+    .message-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+    #message-form, .right-message {
+        width: 100%;
+    }
 }

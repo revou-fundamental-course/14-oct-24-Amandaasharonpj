@@ -1,4 +1,12 @@
 //ini java script pakai prompt
+
+// ambil nama
+function replaceName() {
+    let nama = prompt("What is your name?", "");
+    document.getElementById("nama").innerHTML = nama;
+}
+replaceName();
+
 // Get form and display elements
 const form = document.getElementById('message-form');
 const displayName = document.getElementById('displayName');
